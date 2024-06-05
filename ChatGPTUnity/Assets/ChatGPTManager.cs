@@ -22,28 +22,35 @@ public class ChatGPTManager : MonoBehaviour
     
     public async void AskChatGPT(string newText)
     {
+        if (string.IsNullOrEmpty(newText))
+        {
+            Debug.Log("¿En qué te puedo ayudar?");
+            OnResponse.Invoke("¿En qué te puedo ayudar?");
+            return;
+        }
+    
         ChatMessage newMessage = new ChatMessage();
         newMessage.Content = newText;
         newMessage.Role = "user";
-
+    
         messages.Add(newMessage);
-
+    
         CreateChatCompletionRequest request = new CreateChatCompletionRequest();
         request.Messages = messages;
         request.Model = "gpt-3.5-turbo";
-
+    
         var response = await openAI.CreateChatCompletion(request);
-
-       if (response.Choices != null && response.Choices.Count > 0)
-
+    
+        if (response.Choices != null && response.Choices.Count > 0)
         {
             var chatResponse = response.Choices[0].Message;
             messages.Add(chatResponse);
             Debug.Log(chatResponse.Content);
-
+    
             OnResponse.Invoke(chatResponse.Content);
         }
     }
+
 
 
 
