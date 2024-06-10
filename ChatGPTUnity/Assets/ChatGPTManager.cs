@@ -30,7 +30,7 @@ public class ChatGPTManager : MonoBehaviour
         }
     
         ChatMessage newMessage = new ChatMessage();
-        newMessage.Content = newText;
+        newMessage.Content = newText + "Tiene que ser muy muy muy resumida y de un solo parrafo y debe tener inicio, nudo y final.";
         newMessage.Role = "user";
     
         messages.Add(newMessage);

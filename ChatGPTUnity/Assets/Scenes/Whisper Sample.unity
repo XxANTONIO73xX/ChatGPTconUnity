@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1077,7 +1077,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Say a few words in English
+  m_Text: Hola, amo mio, dame instrucciones.
 --- !u!222 &1279660204
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1099,7 +1099,7 @@ GameObject:
   - component: {fileID: 1288636702}
   - component: {fileID: 1288636701}
   m_Layer: 0
-  m_Name: Cube 2
+  m_Name: cubo azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1176,7 +1176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288636700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1056, y: -44, z: -341}
+  m_LocalPosition: {x: 1061.6, y: -42.1, z: -333.7}
   m_LocalScale: {x: 58.318874, y: 58.318874, z: 58.318874}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2183,6 +2183,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736223103}
   m_CullTransparentMesh: 0
+--- !u!1 &1769406813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1769406814}
+  - component: {fileID: 1769406815}
+  m_Layer: 0
+  m_Name: ObjectMotion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1769406814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769406813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 957.8674, y: -41.012177, z: -339.63055}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1769406815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769406813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83398f6e1137dee49b7bc2a14b9a510a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectoName: 
+  action: 
+  time: 0
+  direction: 
 --- !u!1 &1862823838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,6 +2340,7 @@ GameObject:
   - component: {fileID: 1866931545}
   - component: {fileID: 1866931547}
   - component: {fileID: 1866931546}
+  - component: {fileID: 1866931549}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -2361,6 +2410,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866931544}
   m_CullTransparentMesh: 0
+--- !u!114 &1866931549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866931544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bca60bc2fcb1bc43ada6270281b90e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiText: {fileID: 1866931546}
+  interval: 3
+  actions:
+  - girar
+  - mover
+  directions:
+  - derecha
+  - izquierda
+  - adelante
+  - "atr\xE1s"
+  - arriba
+  - abajo
+  times:
+  - uno
+  - dos
+  - tres
+  - cuatro
+  - cinco
+  - seis
+  - siete
+  - ocho
+  - nueve
+  objectNames:
+  - cubo rojo
+  - cubo azul
+  objectMotionScript: {fileID: 1769406815}
 --- !u!1 &1990160739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,7 +2498,7 @@ GameObject:
   - component: {fileID: 2045957574}
   - component: {fileID: 2045957573}
   m_Layer: 0
-  m_Name: Cube 1
+  m_Name: cubo rojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2487,14 +2574,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045957572}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.018667912, y: -0.022966169, z: -0.0010041391, w: 0.9995614}
   m_LocalPosition: {x: 969.6699, y: -40.5193, z: -340.51}
   m_LocalScale: {x: 54.007015, y: 54.007015, z: 54.007015}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -2.141, y: -2.631, z: -0.066}
 --- !u!1 &2135653323
 GameObject:
   m_ObjectHideFlags: 0
