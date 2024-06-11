@@ -317,6 +317,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  responseText: {fileID: 0}
 --- !u!4 &83587497
 Transform:
   m_ObjectHideFlags: 0
@@ -1476,26 +1477,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-    a bibendum ante, et pellentesque augue. Maecenas diam metus, viverra sit amet
-    pharetra vitae, accumsan vitae tellus. Curabitur dictum lacus at erat interdum
-    interdum. Nam sodales libero nisi, nec sodales risus pulvinar eu. Curabitur nec
-    felis erat. Donec egestas dolor ante, eget eleifend est ultrices nec. Aliquam
-    eget accumsan quam.
-
-    
-
-    Duis convallis, lacus vehicula pharetra semper,
-    massa erat cursus tortor, in feugiat nulla mi quis risus. Fusce aliquet, purus
-    non hendrerit imperdiet, augue arcu ultricies ex, vel congue ante dolor non erat.
-    Nam sagittis facilisis odio, vel suscipit nisi condimentum vel. Morbi in leo
-    sed quam malesuada tempor. Vivamus convallis in mauris non euismod. Fusce porttitor,
-    dolor nec dictum rutrum, nisi nunc congue risus, ut laoreet tellus risus at nisi.
-    Suspendisse lectus ante, gravida sed feugiat vitae, euismod et justo. Vestibulum
-    id blandit nisl. Duis leo lacus, porta eu varius quis, dapibus ac erat. Cras
-    vel nunc lectus. Duis varius at ipsum posuere varius. Praesent molestie, risus
-    et elementum venenatis, justo ligula tincidunt velit, at pulvinar purus lacus
-    non ipsum.'
+  m_text: "Hola, soy Booberto.\nEn mi vida pasada me dedicaba a contar historias
+    de terror.\n\n\n\nHasta que me volv\xED una.\nMe s\xE9 muchas historias, dime
+    alguna que te interese."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
