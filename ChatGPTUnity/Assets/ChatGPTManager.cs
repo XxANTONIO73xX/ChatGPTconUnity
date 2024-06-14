@@ -17,6 +17,7 @@ public class ChatGPTManager : MonoBehaviour
     private string lastResponse;
 
     public TextMeshProUGUI responseText; // Referencia al componente TextMeshProUGUI en la UI
+    public TextPageSwitcher pageSwitcher; // Referencia al TextPageSwitcher
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +65,12 @@ public class ChatGPTManager : MonoBehaviour
 
             lastResponse = chatResponse.Content; // Actualizar el último mensaje de respuesta
             OnResponse.Invoke(chatResponse.Content);
+
+            // Notificar al TextPageSwitcher sobre el nuevo contenido
+            if (pageSwitcher != null)
+            {
+                pageSwitcher.UpdateContent(responseText.text);
+            }
         }
     }
 

@@ -317,7 +317,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  responseText: {fileID: 0}
+  responseText: {fileID: 874890849}
+  pageSwitcher: {fileID: 2058764649}
 --- !u!4 &83587497
 Transform:
   m_ObjectHideFlags: 0
@@ -4025,6 +4026,7 @@ MonoBehaviour:
   textMeshProUGUI: {fileID: 874890849}
   nextButton: {fileID: 1906986672}
   prevButton: {fileID: 1705367587}
+  coolDownTime: 0.5
 --- !u!1 &2076118088
 GameObject:
   m_ObjectHideFlags: 0
