@@ -41,10 +41,10 @@ public class ObjectMotion : MonoBehaviour
         switch (direction)
         {
             case "derecha":
-                rotationAxis = Vector3.up;
+                rotationAxis = Vector3.back;
                 break;
             case "izquierda":
-                rotationAxis = Vector3.down;
+                rotationAxis = Vector3.forward;
                 break;
             case "adelante":
                 rotationAxis = Vector3.right;
@@ -53,10 +53,10 @@ public class ObjectMotion : MonoBehaviour
                 rotationAxis = Vector3.left;
                 break;
             case "arriba":
-                rotationAxis = Vector3.forward;
+                rotationAxis = Vector3.up;
                 break;
             case "abajo":
-                rotationAxis = Vector3.back;
+                rotationAxis = Vector3.down;
                 break;
             default:
                 Debug.LogError("Invalid direction for rotation.");
